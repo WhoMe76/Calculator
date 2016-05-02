@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  
+</head>
+
+
+<body>
+ <script type="text/javascript" " src="calculator.js"></script>
+  <div class="header">
+    <h1>Scientific Calculator</h1>
+  </div>
+  <div class="main-content">
+    <FORM NAME="sci-calc">
+
+      <input class="textbox" type="text" INPUT NAME="display" VALUE="0" SIZE="100" MAXLENGTH="100">
+      <div class="table">
+        <div class="rowone">
+          <TR>
+            <TD ALIGN="center">
+              <INPUT TYPE="button" VALUE=" exp " id="fun" ONCLICK="if (checkNum(this.form.display.value)) { exp(this.form) }">
+            </TD>
+            <TD ALIGN="center">
+              <INPUT TYPE="button" VALUE="  7  " id="num" ONCLICK="addChar(this.form.display, '7')">
+            </TD>
+            <TD ALIGN="center">
+              <INPUT TYPE="button" VALUE="  8  " id="num" ONCLICK="addChar(this.form.display, '8')">
+            </TD>
+            <TD ALIGN="center">
+              <INPUT TYPE="button" VALUE="  9  " id="num" ONCLICK="addChar(this.form.display, '9')">
+            </TD>
+            <TD ALIGN="center">
+              <INPUT TYPE="button" VALUE="   /   " id="fun" ONCLICK="addChar(this.form.display, '/')">
+            </TD>
+          </TR>
+        </div>
+              <div class="rowtwo">
+        <TR>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE="   ln   " id="fun" ONCLICK="if (checkNum(this.form.display.value)) { ln(this.form) }">
+          </TD>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE="  4  "  id="num" ONCLICK="addChar(this.form.display, '4')">
+          </TD>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE="  5  " id="num" ONCLICK="addChar(this.form.display, '5')">
+          </TD>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE="  6  " id="num" ONCLICK="addChar(this.form.display, '6')">
+          </TD>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE="   *   " id="fun" ONCLICK="addChar(this.form.display, '*')">
+          </TD>
+        </TR>
+            </div>
+            <div class="rowthree">
+        <TR>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE=" sqrt " id="fun" ONCLICK="if (checkNum(this.form.display.value)) { sqrt(this.form) }">
+          </TD>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE="  1  " id="num" ONCLICK="addChar(this.form.display, '1')">
+          </TD>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE="  2  " id="num" ONCLICK="addChar(this.form.display, '2')">
+          </TD>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE="  3  " id="num" ONCLICK="addChar(this.form.display, '3')">
+          </TD>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE="   -   " id="fun" ONCLICK="addChar(this.form.display, '-')">
+          </TD>
+        </TR>
+        </div>
+        <div calss="rowfour">
+        <TR>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE="  sq  " id="fun" ONCLICK="if (checkNum(this.form.display.value)) { square(this.form) }">
+          </TD>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE="  0  " id="num" ONCLICK="addChar(this.form.display, '0')">
+          </TD>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE="   .  " id="fun" ONCLICK="addChar(this.form.display, '.')">
+          </TD>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE=" +/- " id="fun" ONCLICK="changeSign(this.form.display)">
+          </TD>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE="   +  "  id="fun" ONCLICK="addChar(this.form.display, '+')">
+          </TD>
+        </TR>
+        </div>
+        <TR>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE="    (    " id="fun" ONCLICK="addChar(this.form.display, '(')">
+          </TD>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE="cos" id="fun" ONCLICK="if (checkNum(this.form.display.value)) { cos(this.form) }">
+          </TD>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE=" sin" id="fun" ONCLICK="if (checkNum(this.form.display.value)) { sin(this.form) }">
+          </TD>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE=" tan" id="fun" ONCLICK="if (checkNum(this.form.display.value)) { tan(this.form) }">
+          </TD>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE="   )   " id="fun" ONCLICK="addChar(this.form.display, ')')">
+          </TD>
+        </TR>
+        <div class="rowsix">
+        <TR>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE="clear" id="sel" ONCLICK="this.form.display.value = 0 ">
+          </TD>
+          <TD ALIGN="center" COLSPAN="3">
+            <INPUT TYPE="button" VALUE="backspace"  id="bac" ONCLICK="deleteChar(this.form.display)">
+          </TD>
+          <TD ALIGN="center">
+            <INPUT TYPE="button" VALUE="enter" NAME="enter" id="sel" ONCLICK="if (checkNum(this.form.display.value)) { compute(this.form) }">
+          </TD>
+        </TR>
+        </div>
+        </TABLE>
+      </div>
+    </FORM>
+  </div>
+</body>
+
+</html>
